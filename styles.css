@@ -11,6 +11,8 @@
   --vdarkblue: hsl(233, 47%, 7%);
   --darkdeblue: hsl(244, 38%, 16%);
   --violet: hsl(277, 64%, 61%);
+  --slightlywhite: hsla(0, 0%, 100%, 0.75);
+  --slightlytw: hsla(0, 0%, 100%, 0.75);
 }
 
 body {
@@ -46,12 +48,12 @@ body {
   justify-content: space-around;
   align-items: left;
   flex-direction: column;
-  padding: 4rem;
+  padding: 5em;
 }
 
 h1 {
   font-family: "Inter", sans-serif;
-  font-size: 2rem;
+  font-size: 3em;
 }
 
 .violet {
@@ -59,14 +61,16 @@ h1 {
 }
 
 p {
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6em;
+  line-height: 1.7;
+  color: var(--slightlywhite);
+  padding-top: 0.8em;
 }
 
 .numbers {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   font-family: "Lexend Deca", sans-serif;
 }
@@ -76,6 +80,8 @@ p {
   background: url(./images/image-header-desktop.jpg) no-repeat center/cover;
   width: 50%;
   position: relative;
+  background-color: var(--violet);
+  background-blend-mode: multiply;
 }
 
 .purpleCover {
@@ -86,17 +92,23 @@ p {
   left: 0;
   bottom: 0;
   background: var(--violet);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .stats {
   flex-direction: column;
   display: flex;
   text-transform: uppercase;
+  color: var(--slightlywhite);
+  line-height: 1.5;
+  font-size: 1em;
+  padding: 3em 0 0 0;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .number {
-  font-size: 2rem;
+  font-size: 2em;
+  color: white;
 }
 
 /*font-family: "Inter", sans-serif;
@@ -110,17 +122,7 @@ font-family: "Lexend Deca", sans-serif;*/
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1200px) {
-  .leftSide {
-    justify-content: space-evenly;
-  }
-
-  p {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .containerWrapper {
     flex-direction: column;
     width: 100%;
